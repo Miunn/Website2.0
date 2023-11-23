@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aca00107-7b18-4a61-96fe-183f694ec64f" name="miunn-in-the-cloud">
+        <fileTransfer rootFolder="/home/miunn/Website2.0" accessType="SFTP" host="remicaulier.fr" port="22" sshConfigId="072185e3-c2f2-4237-95e4-e5e057a4f01e" sshConfig="miunn@remicaulier.fr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

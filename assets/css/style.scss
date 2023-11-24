@@ -1,0 +1,38 @@
+// Primary
+@import '@radix-ui/colors/violet.css';
+@import "@radix-ui/colors/violet-dark.css";
+
+// Accent
+@import "@radix-ui/colors/grass.css";
+
+// Natural pairing to accent
+@import "@radix-ui/colors/olive.css";
+
+// Semantic
+@import "@radix-ui/colors/indigo.css";  // Info
+@import "@radix-ui/colors/jade.css";    // Success
+@import "@radix-ui/colors/amber.css";   // Warning
+@import "@radix-ui/colors/red.css";     // Error
+
+:root, .dark {
+  --main-background: var(--violet-1);
+  --mail-background-2: var(--violet-2);
+
+  --component-background: var(--violet-3);
+  --component-background-hover: var(--violet-4);
+  --component-background-selected: var(--violet-5);
+
+  --border-not-interactive: var(--violet-6);
+  --border-interactive: var(--violet-7);
+  --border-strong: var(--violet-8);
+
+  --solid-background: var(--violet-9);
+  --solid-background-hover: var(--violet-10);
+
+  --text-primary-low: var(--violet-11);
+  --text-primary-high: var(--violet-12);
+}
+
+body {
+  background-color: var(--main-background);
+}

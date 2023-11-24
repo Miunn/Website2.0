@@ -11,6 +11,6 @@ class CoreController extends AbstractController
     #[Route('/', name: 'app_core_index')]
     public function index(): Response
     {
-        return $this->render('index.twig');
+        return $this->render('home.twig');
     }
 }

@@ -5,7 +5,7 @@
       <paths name="miunn-in-the-cloud">
         <serverdata>
           <mappings>
-            <mapping deploy="/Website2.0" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

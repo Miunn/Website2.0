@@ -10,5 +10,40 @@
     <div class="content-wrapper">
         <h1 class="headline">Remi Caulier</h1>
         <h2 class="subtitle">{{ 'home.subtitle'|trans }}</h2>
+
+        <section>
+            <h3 class="section-title">
+                <div class="sep-line extended"></div> {{ 'home.sections.section1.title'|trans }}</h3>
+            <p>{{ 'home.sections.section1.text'|trans }}</p>
+        </section>
+
+        <section>
+            <h3 class="section-title">
+                <div class="sep-line"></div> {{ 'home.sections.section2.title'|trans }}</h3>
+
+            <div class="tab-selector">
+                <button class="tab-select" aria-selected="true">{{ 'home.sections.section2.exp1.title'|trans }}</button>
+                <button class="tab-select" aria-selected="false">{{ 'home.sections.section2.exp2.title'|trans }}</button>
+                <button class="tab-select" aria-selected="false">{{ 'home.sections.section2.exp3.title'|trans }}</button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab" aria-selected="true">
+
+                </div>
+                <div class="tab" aria-selected="false"></div>
+                <div class="tab" aria-selected="false"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="section-title">
+                <div class="sep-line"></div> {{ 'home.sections.section3.title'|trans }}</h3>
+        </section>
+
+        <section>
+            <h3 class="section-title">
+                <div class="sep-line"></div> {{ 'home.sections.section4.title'|trans }}</h3>
+        </section>
     </div>
 {% endblock %}

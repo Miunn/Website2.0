@@ -1,1 +1,44 @@
 home.subtitle: Subtitle
+home.sections:
+  section1:
+    title: About me
+    text: Altera non tradit falsi et non solvantur distinguantur definitiones plane dicitur parte quaerendi partiendo nihil rerum de definitiones aliquid falsi parte iste semel solvantur veri plane si videtur ut est iudicia in disserendi docet nihil iste est ut quo iste nudus parte in definitiones mihi dividendo dividendo esse falsi ostendit tollit ac altera docet ambigua definitiones iudicia putat parte philosophiae inermis probatum definitiones sit via vero iudicia rerum falsi pro solvantur iudicia est veri ac quaerendi semel falsi ut quibus disserendi distinguantur dicitur solvantur in est pro pro philosophiae non disserendi docet ratio modo ambigua est sit probatum est ponit quaerendi et modo ambigua definitiones videtur vester ac non aliquid videtur dicitur iudicia putat et inermis ponit inermis solvantur rerum docet iste aliquid dicitur definitiones probatum modo iudicium docet iudicium logikh probatum concludaturque mihi solvantur parte vero vero probatum sensibus iudicium ut qua pro ambigua iudicium concludaturque altera plane efficiatur falsi iste ponit quo ostendit est docet vero nudus veri probatum dicitur de quae non inermis tollit in ut vester et distinguantur quae modo ac via aliquid si concludaturque efficiatur omne tradit nudus definitiones inermis falsi inermis dividendo ponit falsi probatum probatum quae dividendo non philosophiae iudicium putat non est.
+  section2:
+    title: Experiences
+    exp1:
+      title: Elico
+      job: Internship at Elico - Regis Martelet
+      dates: September 2023 - January 2024
+      description: Lorem
+    exp2:
+      title: Pandrol
+      job: Internship at <a class="company-name">Pandrol</a>
+      dates: July - August 2021
+      description: Lorem
+    exp3:
+      title: ./insa.sh
+      job: Computer science club ./insa.sh
+      dates: Septembre 2022 - Present
+      description: Lorem
+  section3:
+    title: Projects
+    project1:
+      title: HebergOS
+      description: Lorem
+      techno: Symfony Docker
+    project2:
+      title: Ensembll
+      description: Lorem
+      techno: Flask
+    project3:
+      title: Mastermind
+      description: Lorem
+      techno: Android Java
+  section4:
+    title: Achievements
+    acv1:
+      title: Root-Me
+      description: Lorem
+    acv2:
+      title: Cod'INSA
+      description: Lorem

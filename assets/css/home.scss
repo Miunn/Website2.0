@@ -22,6 +22,7 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 30px;
 
     .sep-line {
       display: inline-block;
@@ -34,13 +35,21 @@ section {
   }
 }
 
+#experiences {
+  .section-content {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+  }
+}
+
 .tab-selector {
   width: 150px;
   display: flex;
   flex-direction: column;
 
   .tab-select {
-    width: 100%;
     font-family: Inconsolata, sans-serif;
     background-color: transparent;
     border-left: 1px solid var(--border-gray-interactive);
@@ -52,10 +61,20 @@ section {
       color: var(--text-primary-low);
     }
 
-    &[aria-selected="true"] {
+    &.current {
       color: var(--text-primary-low);
       background-color: var(--component-background);
       border-left: 1px solid var(--border-interactive);
+    }
+  }
+}
+
+.tabs {
+  .tab {
+    display: none;
+
+    &.current {
+      display: block;
     }
   }
 }

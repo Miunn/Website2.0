@@ -42,6 +42,90 @@ section {
     display: flex;
     gap: 50px;
   }
+
+  .tab {
+    h4 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font-family: 'Fira Code', monospace;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .company-name {
+      color: var(--text-primary-low);
+    }
+  }
+}
+
+.project {
+  position: relative;
+  min-height: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 200px;
+  }
+
+  &:nth-child(even) {
+    .project-card {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .project-cover {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &:nth-child(odd) {
+    .project-card {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .project-cover {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.project-card {
+
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  background-color: var(--main-background-2);
+  width: 450px;
+
+  .project-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .project-description {
+    margin-bottom: 20px;
+  }
+
+  .project-techno {
+    font-family: "Fira Code", monospace;
+    color: var(--text-gray-low);
+  }
+}
+
+.project-cover {
+  img {
+    max-width: 700px;
+  }
 }
 
 .tab-selector {

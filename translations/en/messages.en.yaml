@@ -7,7 +7,7 @@ home.sections:
     title: Experiences
     exp1:
       title: Elico
-      job: Internship at Elico - Regis Martelet
+      job: Internship at <a class="company-name">Elico - Regis Martelet</a>
       dates: September 2023 - January 2024
       description: Lorem
     exp2:
@@ -17,8 +17,8 @@ home.sections:
       description: Lorem
     exp3:
       title: ./insa.sh
-      job: Computer science club ./insa.sh
-      dates: Septembre 2022 - Present
+      job: Computer science club <a class="company-name">./insa.sh</a>
+      dates: September 2022 - Present
       description: Lorem
   section3:
     title: Projects

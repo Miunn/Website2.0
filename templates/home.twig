@@ -1,5 +1,14 @@
 {% extends 'index.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('home') }}
+{% endblock %}
+
 {% block main %}
 
+    <div class="content-wrapper">
+        <h1 class="headline">Remi Caulier</h1>
+        <h2 class="subtitle">{{ 'home.subtitle'|trans }}</h2>
+    </div>
 {% endblock %}

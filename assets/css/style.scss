@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Qwigley&display=swap');
+
 // Primary
 @import '@radix-ui/colors/violet.css';
 @import "@radix-ui/colors/violet-dark.css";
 
 // Accent
 @import "@radix-ui/colors/grass.css";
+@import "@radix-ui/colors/grass-dark.css";
 
 // Natural pairing to accent
 @import "@radix-ui/colors/olive.css";
+@import "@radix-ui/colors/olive-dark.css";
 
 // Semantic
-@import "@radix-ui/colors/indigo.css";  // Info
-@import "@radix-ui/colors/jade.css";    // Success
-@import "@radix-ui/colors/amber.css";   // Warning
-@import "@radix-ui/colors/red.css";     // Error
+@import "@radix-ui/colors/indigo.css";
+// Info
+@import "@radix-ui/colors/jade.css";
+// Success
+@import "@radix-ui/colors/amber.css";
+// Warning
+@import "@radix-ui/colors/red.css"; // Error
 
 :root, .dark {
   --main-background: var(--violet-1);
@@ -31,6 +38,43 @@
 
   --text-primary-low: var(--violet-11);
   --text-primary-high: var(--violet-12);
+
+  --text-gray-low: var(--olive-11);
+  --text-gray-high: var(--olive-12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, label, button {
+  color: var(--text-gray-high);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  width: fit-content;
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+
+  &.symbol-filled {
+    font-variation-settings: 'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  }
 }
 
 body {

@@ -128,6 +128,23 @@ section {
   }
 }
 
+.achievements {
+  display: flex;
+  gap: 30px;
+}
+
+.achievement {
+  width: 275px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-interactive);
+  background-color: var(--main-background-2);
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
 .tab-selector {
   width: 150px;
   display: flex;

@@ -1,5 +1,16 @@
 {% extends 'index.twig' %}
 
 {% block main %}
-    <h1>Resources</h1>
+    <div class="wrapper">
+        <h1 class="headline">{{ 'resources.title'|trans }}</h1>
+        <h4 class="subtitle">{{ 'resources.subtitle'|trans }}</h4>
+
+        <section class="post-list">
+            {% for post in posts %}
+                <div class="post">
+
+                </div>
+            {% endfor %}
+        </section>
+    </div>
 {% endblock %}

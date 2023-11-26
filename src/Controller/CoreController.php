@@ -17,6 +17,9 @@ class CoreController extends AbstractController
     #[Route('/resources', name: 'app_core_resources')]
     public function resources(): Response
     {
-        return $this->render('pages/resources.twig');
+        $posts = [];
+        return $this->render('pages/resources.twig', [
+            'posts' => $posts,
+        ]);
     }
 }

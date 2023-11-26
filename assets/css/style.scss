@@ -45,6 +45,23 @@
 
   --text-gray-low: var(--olive-11);
   --text-gray-high: var(--olive-12);
+
+  --accent-main-background: var(--grass-1);
+  --accent-main-background-2: var(--grass-2);
+
+  --accent-component-background: var(--grass-3);
+  --accent-component-background-hover: var(--grass-4);
+  --accent-component-background-selected: var(--grass-5);
+
+  --accent-border-not-interactive: var(--grass-6);
+  --accent-border-interactive: var(--grass-7);
+  --accent-border-strong: var(--grass-8);
+
+  --accent-solid-background: var(--grass-9);
+  --accent-solid-background-hover: var(--grass-10);
+
+  --accent-text-primary-low: var(--grass-11);
+  --accent-text-primary-high: var(--grass-12);
 }
 
 * {

@@ -56,7 +56,7 @@ section {
     }
 
     .company-name {
-      color: var(--accent-text-primary-low);
+      color: var(--accent-text-low);
     }
   }
 }
@@ -118,7 +118,7 @@ section {
 
   .project-techno {
     font-family: "Fira Code", monospace;
-    color: var(--text-gray-low);
+    color: var(--accent-text-low);
   }
 }
 
@@ -158,14 +158,14 @@ section {
     padding: 20px 10px;
 
     &:hover {
-      background-color: var(--main-background-2);
-      color: var(--text-primary-low);
+      background-color: var(--accent-main-background-2);
+      color: var(--accent-text-low);
     }
 
     &.current {
-      color: var(--text-primary-low);
-      background-color: var(--component-background);
-      border-left: 1px solid var(--border-interactive);
+      color: var(--accent-text-low);
+      background-color: var(--accent-component-background);
+      border-left: 1px solid var(--accent-border-interactive);
     }
   }
 }

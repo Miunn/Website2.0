@@ -72,9 +72,11 @@
 
 a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: var(--accent-text-high);
 }
 
-h1, h2, h3, h4, h5, h6, p, label, button {
+h1, h2, h3, h4, h5, h6, p, label, button, li {
   color: var(--text-gray-high);
   font-family: 'Montserrat', sans-serif;
 }
@@ -109,4 +111,22 @@ button {
 
 body {
   background-color: var(--main-background);
+}
+
+header {
+  min-height: 100px;
+  padding: 30px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+
+  nav {
+    ul {
+      list-style: none;
+      li {
+        color: var(--accent-text-high);
+      }
+    }
+  }
 }

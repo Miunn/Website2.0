@@ -10,6 +10,14 @@
     {{ encore_entry_script_tags('home') }}
 {% endblock %}
 
+{% block header %}
+    <nav>
+        <ul>
+            <li><a href="{{ path('app_core_resources') }}">{{ 'header.resources'|trans }}</a></li>
+        </ul>
+    </nav>
+{% endblock %}
+
 {% block main %}
 
     <div class="content-wrapper">

@@ -11,6 +11,12 @@ class CoreController extends AbstractController
     #[Route('/', name: 'app_core_index')]
     public function index(): Response
     {
-        return $this->render('home.twig');
+        return $this->render('pages/home.twig');
+    }
+
+    #[Route('/resources', name: 'app_core_resources')]
+    public function resources(): Response
+    {
+        return $this->render('pages/resources.twig');
     }
 }

@@ -5,6 +5,8 @@
         <h1 class="headline">{{ 'resources.title'|trans }}</h1>
         <h4 class="subtitle">{{ 'resources.subtitle'|trans }}</h4>
 
+        <a href="{{ path('app_login') }}">{{ 'login.action'|trans }}</a>
+
         <section class="post-list">
             {% for post in posts %}
                 <div class="post">

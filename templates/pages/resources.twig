@@ -1,11 +1,15 @@
 {% extends 'index.twig' %}
 
 {% block main %}
-    <div class="wrapper">
+    <div class="content-wrapper">
         <h1 class="headline">{{ 'resources.title'|trans }}</h1>
         <h4 class="subtitle">{{ 'resources.subtitle'|trans }}</h4>
 
+        {% if not is_granted('IS_AUTHENTICATED') %}
         <a href="{{ path('app_login') }}">{{ 'login.action'|trans }}</a>
+        {% else %}
+        <a href="{{ path('app_logout') }}">{{ 'login.logout'|trans }}</a>
+        {% endif %}
 
         <section class="post-list">
             {% for post in posts %}

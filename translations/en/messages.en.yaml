@@ -51,3 +51,4 @@ resources.subtitle: Here you will find posts and links to recent news involving 
 login.username: Username
 login.password: Password
 login.action: Login
+login.logout: Logout

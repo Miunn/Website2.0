@@ -47,6 +47,8 @@ home.sections:
 
 resources.title: Welcome to the resources
 resources.subtitle: Here you will find posts and links to recent news involving tech in general. I wouldn't presume to say that this list is exhaustive but it contains things I want to keep an eye on.
+resources.add: Ajouter
+
 
 login.username: Username
 login.password: Password

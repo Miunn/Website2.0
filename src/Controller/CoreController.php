@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Post;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,9 +17,10 @@ class CoreController extends AbstractController
     }
 
     #[Route('/resources', name: 'app_core_resources')]
-    public function resources(): Response
+    public function resources(EntityManagerInterface $entityManager): Response
     {
-        $posts = [];
+        $postsRepository = $entityManager->getRepository(Post::class);
+        $posts = $postsRepository->findAll();
         return $this->render('pages/resources.twig', [
             'posts' => $posts,
         ]);

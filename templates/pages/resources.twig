@@ -1,20 +1,83 @@
 {% extends 'index.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('resources') }}
+{% endblock %}
+
 {% block main %}
     <div class="content-wrapper">
-        <h1 class="headline">{{ 'resources.title'|trans }}</h1>
-        <h4 class="subtitle">{{ 'resources.subtitle'|trans }}</h4>
+        <div class="head">
+            <h1 class="headline">{{ 'resources.title'|trans }}</h1>
+            <h4 class="subtitle">{{ 'resources.subtitle'|trans }}</h4>
 
-        {% if not is_granted('IS_AUTHENTICATED') %}
-        <a href="{{ path('app_login') }}">{{ 'login.action'|trans }}</a>
-        {% else %}
-        <a href="{{ path('app_logout') }}">{{ 'login.logout'|trans }}</a>
-        {% endif %}
+            {% if not is_granted('IS_AUTHENTICATED') %}
+                <a href="{{ path('app_login') }}">{{ 'login.action'|trans }}</a>
+            {% else %}
+                <a href="{{ path('app_logout') }}">{{ 'login.logout'|trans }}</a>
+            {% endif %}
+
+            <button type="button">{{ 'resources.add'|trans }}</button>
+        </div>
 
         <section class="post-list">
             {% for post in posts %}
                 <div class="post">
+                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
+                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
 
+                    <p class="description">{{ post.description }}</p>
+
+                    <p>
+                        {% for category in post.categories %}
+                            <span class="category">{{ category.name }}</span>
+                        {% endfor %}
+                    </p>
+                </div>
+            {% endfor %}
+
+            {% for post in posts %}
+                <div class="post">
+                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
+                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
+
+                    <p class="description">{{ post.description }}</p>
+
+                    <p>
+                        {% for category in post.categories %}
+                            <span class="category">{{ category.name }}</span>
+                        {% endfor %}
+                    </p>
+                </div>
+            {% endfor %}
+
+            {% for post in posts %}
+                <div class="post">
+                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
+                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
+
+                    <p class="description">{{ post.description }}</p>
+
+                    <p>
+                        {% for category in post.categories %}
+                            <span class="category">{{ category.name }}</span>
+                        {% endfor %}
+                    </p>
+                </div>
+            {% endfor %}
+
+            {% for post in posts %}
+                <div class="post">
+                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
+                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
+
+                    <p class="description">{{ post.description }}</p>
+
+                    <p>
+                        {% for category in post.categories %}
+                            <span class="category">{{ category.name }}</span>
+                        {% endfor %}
+                    </p>
                 </div>
             {% endfor %}
         </section>

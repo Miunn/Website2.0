@@ -4,7 +4,7 @@ home.subtitle: Subtitle
 home.sections:
   section1:
     title: About me
-    text: Altera non tradit falsi et non solvantur distinguantur definitiones plane dicitur parte quaerendi partiendo nihil rerum de definitiones aliquid falsi parte iste semel solvantur veri plane si videtur ut est iudicia in disserendi docet nihil iste est ut quo iste nudus parte in definitiones mihi dividendo dividendo esse falsi ostendit tollit ac altera docet ambigua definitiones iudicia putat parte philosophiae inermis probatum definitiones sit via vero iudicia rerum falsi pro solvantur iudicia est veri ac quaerendi semel falsi ut quibus disserendi distinguantur dicitur solvantur in est pro pro philosophiae non disserendi docet ratio modo ambigua est sit probatum est ponit quaerendi et modo ambigua definitiones videtur vester ac non aliquid videtur dicitur iudicia putat et inermis ponit inermis solvantur rerum docet iste aliquid dicitur definitiones probatum modo iudicium docet iudicium logikh probatum concludaturque mihi solvantur parte vero vero probatum sensibus iudicium ut qua pro ambigua iudicium concludaturque altera plane efficiatur falsi iste ponit quo ostendit est docet vero nudus veri probatum dicitur de quae non inermis tollit in ut vester et distinguantur quae modo ac via aliquid si concludaturque efficiatur omne tradit nudus definitiones inermis falsi inermis dividendo ponit falsi probatum probatum quae dividendo non philosophiae iudicium putat non est.
+    text: I've been passionate about computer science and cybersecurity for 5 years. I learned programming as a self-taught when I was in high school. Now, I'm in my third-year of a five-year master's-level course in Higher Education. I will graduate with a French engineering degree specialized in computer science and cybersecurity at INSA Hauts-de-France.<br><br><br>I started learning programming in high school by learning the Python programming language. I did some science projects like as a PI calculator with colliding blocks. I continued by learning the C language to do advanced graphics applications. Then I wanted to build applications on mobile phones so I learned Java with XML to build native Android apps using Android Studio. In order to build web applications I learnt about the Flask framework in Python and Symfony in PHP.
   section2:
     title: Experiences
     exp1:
@@ -26,15 +26,15 @@ home.sections:
     title: Projects
     project1:
       title: HebergOS
-      description: Lorem
+      description: For the <span class="monospace">./insa.sh</span> computer science club. Allows members who has hosted projects to manage them easily, track some stats and more.
       techno: Symfony Docker
     project2:
       title: Ensembll
-      description: Lorem
+      description: A car parks management web application. For users to book their parking places and administrators to manage car parks, bookings, users and stats.
       techno: Flask
     project3:
       title: Mastermind
-      description: Lorem
+      description: An android mastermind game implementation. Works both in single and multiplayer based on Bluetooth.
       techno: Android Java
   section4:
     title: Achievements

@@ -37,6 +37,22 @@ home.sections:
       description: An android mastermind game implementation. Works both in single and multiplayer based on Bluetooth.
       techno: Android Java
   section4:
+    title: Technologies I know & Tools I use
+    tool1: Python
+    tool2: C
+    tool3: Flask
+    tool4: PHP
+    tool5: Symfony
+    tool6: MySQL
+    tool7: HTML
+    tool8: CSS
+    tool9: JS
+    tool10: Git
+    tool11: Linux
+    tool12: Android
+    tool13: IntelliJ
+    tool14: VSCode
+  section5:
     title: Achievements
     acv1:
       title: Root-Me

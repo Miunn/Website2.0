@@ -21,6 +21,19 @@ class PostRepository extends ServiceEntityRepository
         parent::__construct($registry, Post::class);
     }
 
+    /**
+     * @param int $max
+     * @return Post[]
+     */
+    public function findLasts(int $max): array
+    {
+        return $this->createQueryBuilder('p')
+            ->orderBy('p.date')
+            ->setMaxResults($max)
+            ->getQuery()
+            ->getResult(true)
+        ;
+    }
 //    /**
 //     * @return Post[] Returns an array of Post objects
 //     */

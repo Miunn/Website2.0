@@ -139,3 +139,20 @@ header {
   max-width: 1000px;
   margin: 150px auto;
 }
+
+.cta {
+  border: 1px solid var(--border-interactive);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--component-background);
+  padding: 5px 7px;
+
+  &:hover {
+    background-color: var(--component-background-hover);
+  }
+
+  &:active {
+    background-color: var(--component-background-selected);
+  }
+}

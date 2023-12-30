@@ -1,2 +1,2 @@
-import '../css/resources.scss';
+import '../css/admin.scss';
 import '../css/components/post.scss';

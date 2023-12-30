@@ -63,10 +63,22 @@ home.sections:
 
 resources.title: Welcome to the resources
 resources.subtitle: Here you will find posts and links to recent news involving tech in general. I wouldn't presume to say that this list is exhaustive but it contains things I want to keep an eye on.
-resources.add: Ajouter
+resources.add: Add
 
 
 login.username: Username
 login.password: Password
 login.action: Login
 login.logout: Logout
+
+admin.category: Category
+admin.category.add: Add a category
+admin.posts: Posts
+admin.posts.add: Add a post
+admin.posts.add.placeholder:
+  title: Title
+  link: Link
+  description: Description
+  categories: Categories
+admin.posts.delete: Delete this post
+admin.posts.bind: Add a category

@@ -50,7 +50,7 @@ home.sections:
     tool10: Git
     tool11: Linux
     tool12: Android
-    tool13: IntelliJ
+    tool13: JetBrains
     tool14: VSCode
   section5:
     title: Achievements

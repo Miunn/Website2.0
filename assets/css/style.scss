@@ -94,6 +94,10 @@ button {
   cursor: pointer;
 }
 
+ul {
+  list-style: none;
+}
+
 .material-symbols-rounded {
   font-variation-settings: 'FILL' 0,
   'wght' 400,
@@ -138,6 +142,10 @@ header {
 .content-wrapper {
   max-width: 1000px;
   margin: 150px auto;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .cta {

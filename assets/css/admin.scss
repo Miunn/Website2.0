@@ -1,6 +1,10 @@
 .wrapper {
   max-width: 1200px;
   margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
 }
 
 h3 {

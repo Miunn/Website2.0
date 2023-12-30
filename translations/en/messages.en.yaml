@@ -72,8 +72,10 @@ login.action: Login
 login.logout: Logout
 
 admin.category: Category
+admin.category.empty: No categories
 admin.category.add: Add a category
 admin.posts: Posts
+admin.posts.empty: No posts
 admin.posts.add: Add a post
 admin.posts.add.placeholder:
   title: Title

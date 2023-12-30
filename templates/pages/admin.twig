@@ -8,12 +8,17 @@
 {% block main %}
 
     <div class="wrapper">
-        <h3>{{ 'admin.category'|trans }}
-            <button type="button" class="cta">{{ 'admin.category.add'|trans }}</button>
-        </h3>
-
         <section>
+            <h3>{{ 'admin.category'|trans }}
+                <button type="button" class="cta">{{ 'admin.category.add'|trans }}</button>
+            </h3>
+
             <ul>
+                {% if categories|length == 0 %}
+                    <li>
+                        <p class="italic">{{ 'admin.category.empty'|trans }}</p>
+                    </li>
+                {% endif %}
                 {% for category in categories %}
                     <li class="category">
                         {{ category.name }}
@@ -22,12 +27,17 @@
             </ul>
         </section>
 
-        <h3>{{ 'admin.posts'|trans }}
-            <button type="button" class="cta">{{ 'admin.posts.add'|trans }}</button>
-        </h3>
-
         <section>
+            <h3>{{ 'admin.posts'|trans }}
+                <button type="button" class="cta">{{ 'admin.posts.add'|trans }}</button>
+            </h3>
+
             <ul>
+                {% if posts|length == 0 %}
+                    <li>
+                        <p class="italic">{{ 'admin.posts.empty'|trans }}</p>
+                    </li>
+                {% endif %}
                 {% for post in posts %}
                     <li>
                         {% include 'components/post.twig' with {'post': post} %}

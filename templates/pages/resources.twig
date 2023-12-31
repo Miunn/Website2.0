@@ -20,55 +20,6 @@
             <button type="button">{{ 'resources.add'|trans }}</button>
         </div>
 
-        <section class="post-list">
-            {% for post in posts %}
-                <div class="post">
-                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
-                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-
-                    <p class="description">{{ post.description }}</p>
-
-                    <p>
-                        {% for category in post.categories %}
-                            <span class="category">{{ category.name }}</span>
-                        {% endfor %}
-                    </p>
-                </div>
-            {% endfor %}
-
-            {% for post in posts %}
-                <div class="post">
-                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
-                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-
-                    <p class="description">{{ post.description }}</p>
-
-                    <p>
-                        {% for category in post.categories %}
-                            <span class="category">{{ category.name }}</span>
-                        {% endfor %}
-                    </p>
-                </div>
-            {% endfor %}
-
-            {% for post in posts %}
-                <div class="post">
-                    <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
-                    <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
-
-                    <p class="description">{{ post.description }}</p>
-
-                    <p>
-                        {% for category in post.categories %}
-                            <span class="category">{{ category.name }}</span>
-                        {% endfor %}
-                    </p>
-                </div>
-            {% endfor %}
-
-            {% for post in posts %}
-                {% include 'components/post.twig' with {'post': post} %}
-            {% endfor %}
-        </section>
+        {% include 'components/post-list.twig' with {'posts': posts} %}
     </div>
 {% endblock %}

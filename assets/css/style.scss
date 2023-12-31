@@ -76,7 +76,7 @@ a {
   color: var(--accent-text-high);
 }
 
-h1, h2, h3, h4, h5, h6, p, label, button, li {
+h1, h2, h3, h4, h5, h6, p, label, button, li, input, textarea {
   color: var(--text-gray-high);
   font-family: 'Montserrat', sans-serif;
 }
@@ -90,12 +90,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  all: unset;
   cursor: pointer;
 }
 
 ul {
   list-style: none;
+}
+
+.swal2-container {
+  .swal2-title {
+    width: 100%;
+  }
+
+  .swal2-validation-message {
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 .material-symbols-rounded {

@@ -14,6 +14,43 @@ h3 {
   width: 100%;
 }
 
-.category {
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+  &>div {
+    display: flex;
+    gap: 7px;
+  }
+
+  .title-row {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .date-row {
+    border: 1px solid var(--border-interactive);
+    border-radius: 5px;
+
+    select {
+      border: none;
+      outline: none;
+    }
+  }
+
+  input, textarea {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    border-bottom: 1px solid var(--border-interactive);
+    color: var(--main-background);
+  }
+
+  textarea {
+    resize: none;
+    min-height: 8rem;
+  }
 }

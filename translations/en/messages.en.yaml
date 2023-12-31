@@ -77,6 +77,7 @@ admin.category.add: Add a category
 admin.posts: Posts
 admin.posts.empty: No posts
 admin.posts.add: Add a post
+admin.posts.add.title: New post
 admin.posts.add.placeholder:
   title: Title
   link: Link
@@ -84,3 +85,8 @@ admin.posts.add.placeholder:
   categories: Categories
 admin.posts.delete: Delete this post
 admin.posts.bind: Add a category
+
+dialog:
+  confirm: Submit
+  cancel: Cancel
+  ok: OK

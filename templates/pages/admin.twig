@@ -5,12 +5,17 @@
     {{ encore_entry_link_tags('admin') }}
 {% endblock %}
 
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('admin') }}
+{% endblock %}
+
 {% block main %}
 
     <div class="wrapper">
         <section>
             <h3>{{ 'admin.category'|trans }}
-                <button type="button" class="cta">{{ 'admin.category.add'|trans }}</button>
+                <button type="button" class="cta" id="add-category-btn">{{ 'admin.category.add'|trans }}</button>
             </h3>
 
             <ul>
@@ -29,21 +34,24 @@
 
         <section>
             <h3>{{ 'admin.posts'|trans }}
-                <button type="button" class="cta">{{ 'admin.posts.add'|trans }}</button>
+                <button type="button" class="cta" id="add-post-btn">{{ 'admin.posts.add'|trans }}</button>
             </h3>
 
-            <ul>
-                {% if posts|length == 0 %}
-                    <li>
-                        <p class="italic">{{ 'admin.posts.empty'|trans }}</p>
-                    </li>
-                {% endif %}
-                {% for post in posts %}
-                    <li>
-                        {% include 'components/post.twig' with {'post': post} %}
-                    </li>
-                {% endfor %}
-            </ul>
+            {% include 'components/post-list.twig' with {'posts': posts} %}
         </section>
     </div>
+
+    <dialog data-title="{{ 'admin.posts.add.title'|trans }}" data-confirm="{{ 'dialog.confirm'|trans }}"
+            data-cancel="{{ 'dialog.cancel'|trans }}" id="add-post-dialog">
+        {{ form_start(newPostForm) }}
+
+        <div>
+            {{ form_row(newPostForm.title) }}
+            {{ form_row(newPostForm.date) }}
+        </div>
+        {{ form_row(newPostForm.link) }}
+        {{ form_row(newPostForm.description) }}
+
+        {{ form_end(newPostForm) }}
+    </dialog>
 {% endblock %}

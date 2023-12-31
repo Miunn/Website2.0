@@ -1,0 +1,12 @@
+<ul class="post-list">
+    {% if posts|length == 0 %}
+        <li>
+            <p class="italic">{{ 'admin.posts.empty'|trans }}</p>
+        </li>
+    {% endif %}
+    {% for post in posts %}
+        <li>
+            {% include 'components/post.twig' with {'post': post} %}
+        </li>
+    {% endfor %}
+</ul>

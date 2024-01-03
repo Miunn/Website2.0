@@ -2,6 +2,12 @@
     <h4 class="title">{{ post.title }} <span class="date">{{ post.date|date('d/m/y') }}</span></h4>
     <a class="link" href="{{ post.link }}" target="_blank">{{ post.link }}</a>
 
+    <div>
+        {% for tag in post.categories %}
+            <a>{{ tag }}</a>
+        {% endfor %}
+    </div>
+
     <p class="description">{{ post.description }}</p>
 
     <p>

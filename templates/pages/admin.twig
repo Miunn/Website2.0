@@ -50,6 +50,15 @@
             {{ form_row(newPostForm.date) }}
         </div>
         {{ form_row(newPostForm.link) }}
+
+        <ul class="tags"
+            data-index="{{ newPostForm.categories|length > 0 ? newPostForm.categories|last.vars.value + 1 : 0 }}"
+            data-prototype="{{ form_widget(newPostForm.categories.vars.prototype)|e('html_attr') }}">
+            {% for tag in newPostForm.categories %}
+                <li>{{ form_row(tag.name) }}</li>
+            {% endfor %}
+        </ul>
+
         {{ form_row(newPostForm.description) }}
 
         {{ form_end(newPostForm) }}

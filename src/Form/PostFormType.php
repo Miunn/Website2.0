@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\Post;
+use App\Entity\PostCategory;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -44,7 +45,16 @@ class PostFormType extends AbstractType
                 ]
             ])
             ->add('categories', CollectionType::class, [
-                'label' => false
+                'label' => 'admin.posts.add.placeholder.categories',
+                'entry_type' => PostCategory::class,
+                "entry_options" => [
+                    'label' => false,
+                    'attr' => [
+                        'class' => 'post-tag'
+                    ]
+                ],
+                'allow_add' => true,
+                'allow_delete' => true
             ])
             ->add('description', TextareaType::class, [
                 'label' => false,

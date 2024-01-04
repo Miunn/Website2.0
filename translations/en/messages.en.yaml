@@ -74,6 +74,7 @@ login.logout: Logout
 admin.category: Category
 admin.category.empty: No categories
 admin.category.add: Add a category
+admin.category.add.name: Name
 admin.posts: Posts
 admin.posts.empty: No posts
 admin.posts.add: Add a post
@@ -82,7 +83,7 @@ admin.posts.add.placeholder:
   title: Title
   link: Link
   description: Description
-  categories: Categories
+  categories: Tags
 admin.posts.delete: Delete this post
 admin.posts.bind: Add a category
 

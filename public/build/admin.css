@@ -1,0 +1,87 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[1]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[4].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[3]!./assets/css/admin.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.new-post-form > div {
+  display: flex;
+  gap: 7px;
+}
+.new-post-form .title-row {
+  display: flex;
+  flex-grow: 1;
+}
+.new-post-form .date-row {
+  border: 1px solid var(--border-interactive);
+  border-radius: 5px;
+}
+.new-post-form .date-row select {
+  border: none;
+  outline: none;
+}
+.new-post-form input, .new-post-form textarea {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  border-bottom: 1px solid var(--border-interactive);
+  color: var(--main-background);
+}
+.new-post-form textarea {
+  resize: none;
+  min-height: 8rem;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[1]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[4].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[3]!./assets/css/components/post.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.post {
+  width: 300px;
+  height: 325px;
+  padding: 15px;
+  background-color: var(--component-background);
+  border: 1px solid var(--border-interactive);
+  border-radius: 0.325em;
+  transition: background-color 100ms;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post:hover {
+  background-color: var(--component-background-hover);
+  cursor: pointer;
+}
+.post .title {
+  width: 100%;
+}
+.post .title .date {
+  float: right;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[1]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[4].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].oneOf[1].use[3]!./assets/css/components/post-list.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 30px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYWRtaW4uY3NzIiwibWFwcGluZ3MiOiI7OztBQUFBO0VBQ0U7RUFDQTtFQUVBO0VBQ0E7RUFDQTtBQUFGOztBQUdBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7QUFBRjs7QUFHQTtFQUNFO0VBQ0E7RUFDQTtBQUFGO0FBRUU7RUFDRTtFQUNBO0FBQUo7QUFHRTtFQUNFO0VBQ0E7QUFESjtBQUlFO0VBQ0U7RUFDQTtBQUZKO0FBSUk7RUFDRTtFQUNBO0FBRk47QUFNRTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBSko7QUFPRTtFQUNFO0VBQ0E7QUFMSixDOzs7O0FDaERBO0VBQ0U7RUFDQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFFQTtFQUNBO0VBQ0E7QUFERjtBQUdFO0VBQ0U7RUFDQTtBQURKO0FBSUU7RUFDRTtBQUZKO0FBSUk7RUFDRTtBQUZOLEM7Ozs7QUNyQkE7RUFDRTtFQUNBO0VBQ0E7QUFDRixDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vYXNzZXRzL2Nzcy9hZG1pbi5zY3NzIiwid2VicGFjazovLy8uL2Fzc2V0cy9jc3MvY29tcG9uZW50cy9wb3N0LnNjc3MiLCJ3ZWJwYWNrOi8vLy4vYXNzZXRzL2Nzcy9jb21wb25lbnRzL3Bvc3QtbGlzdC5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi53cmFwcGVyIHtcclxuICBtYXgtd2lkdGg6IDEyMDBweDtcclxuICBtYXJnaW46IGF1dG87XHJcblxyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBnYXA6IDE1MHB4O1xyXG59XHJcblxyXG5oMyB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLm5ldy1wb3N0LWZvcm0ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBnYXA6IDE2cHg7XHJcblxyXG4gICY+ZGl2IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBnYXA6IDdweDtcclxuICB9XHJcblxyXG4gIC50aXRsZS1yb3cge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZ3JvdzogMTtcclxuICB9XHJcblxyXG4gIC5kYXRlLXJvdyB7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1ib3JkZXItaW50ZXJhY3RpdmUpO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG5cclxuICAgIHNlbGVjdCB7XHJcbiAgICAgIGJvcmRlcjogbm9uZTtcclxuICAgICAgb3V0bGluZTogbm9uZTtcclxuICAgIH1cclxuICB9XHJcblxyXG4gIGlucHV0LCB0ZXh0YXJlYSB7XHJcbiAgICBmbGV4LWdyb3c6IDE7XHJcbiAgICBib3JkZXI6IG5vbmU7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG4gICAgZm9udC1zaXplOiAxLjJyZW07XHJcbiAgICBsaW5lLWhlaWdodDogMS42cmVtO1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHZhcigtLWJvcmRlci1pbnRlcmFjdGl2ZSk7XHJcbiAgICBjb2xvcjogdmFyKC0tbWFpbi1iYWNrZ3JvdW5kKTtcclxuICB9XHJcblxyXG4gIHRleHRhcmVhIHtcclxuICAgIHJlc2l6ZTogbm9uZTtcclxuICAgIG1pbi1oZWlnaHQ6IDhyZW07XHJcbiAgfVxyXG59IiwiLnBvc3Qge1xyXG4gIHdpZHRoOiAzMDBweDtcclxuICBoZWlnaHQ6IDMyNXB4O1xyXG5cclxuICBwYWRkaW5nOiAxNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbXBvbmVudC1iYWNrZ3JvdW5kKTtcclxuICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1ib3JkZXItaW50ZXJhY3RpdmUpO1xyXG4gIGJvcmRlci1yYWRpdXM6IDAuMzI1ZW07XHJcbiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAxMDBtcztcclxuXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIGdhcDogMTBweDtcclxuXHJcbiAgJjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1jb21wb25lbnQtYmFja2dyb3VuZC1ob3Zlcik7XHJcbiAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgfVxyXG5cclxuICAudGl0bGUge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcblxyXG4gICAgLmRhdGUge1xyXG4gICAgICBmbG9hdDogcmlnaHQ7XHJcbiAgICB9XHJcbiAgfVxyXG59IiwiLnBvc3QtbGlzdCB7XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdChhdXRvLWZpdCwgMzAwcHgpO1xyXG4gIGdhcDogMzBweDtcclxufSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/

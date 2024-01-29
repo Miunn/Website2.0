@@ -182,14 +182,14 @@ section {
   gap: 36px;
 
   .tool {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-rows: 100px 1fr;
+    place-items: center;
 
     img {
-      max-width: 100px;
-      max-height: 100px;
-      height: 100px;
+      max-width: 80px;
+      max-height: 80px;
       margin-bottom: 4px;
     }
   }

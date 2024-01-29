@@ -21,7 +21,7 @@ class PostFormType extends AbstractType
             ->add('title', TextType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'admin.posts.add.placeholder.title',
+                    'placeholder' => 'posts.add.placeholder.title',
                 ],
                 'row_attr' => [
                     'class' => 'title-row'
@@ -41,12 +41,12 @@ class PostFormType extends AbstractType
             ->add('link', UrlType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'admin.posts.add.placeholder.link',
+                    'placeholder' => 'posts.add.placeholder.link',
                 ]
             ])
             ->add('categories', CollectionType::class, [
-                'label' => 'admin.posts.add.placeholder.categories',
-                'entry_type' => PostCategory::class,
+                'label' => 'posts.add.placeholder.categories',
+                'entry_type' => PostCategoryFormType::class,
                 "entry_options" => [
                     'label' => false,
                     'attr' => [
@@ -59,7 +59,7 @@ class PostFormType extends AbstractType
             ->add('description', TextareaType::class, [
                 'label' => false,
                 'attr' => [
-                    'placeholder' => 'admin.posts.add.placeholder.description',
+                    'placeholder' => 'posts.add.placeholder.description',
                 ]
             ])
         ;

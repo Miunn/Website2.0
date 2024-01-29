@@ -123,8 +123,14 @@ ul {
 }
 
 .sep-line {
+  display: inline-block;
   height: 1px;
+  width: 0;
   background-color: var(--solid-background);
+
+  &.extended {
+    width: 100px;
+  }
 }
 
 body {
@@ -132,7 +138,6 @@ body {
 }
 
 header {
-  min-height: 100px;
   padding: 30px;
   width: 95%;
   margin: auto;

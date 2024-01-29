@@ -18,15 +18,6 @@ section {
     align-items: center;
     gap: 10px;
     margin-bottom: 30px;
-
-    .sep-line {
-      display: inline-block;
-      width: 0;
-
-      &.extended {
-        width: 100px;
-      }
-    }
   }
 }
 

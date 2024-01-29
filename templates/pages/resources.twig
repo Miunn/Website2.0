@@ -3,23 +3,70 @@
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('resources') }}
+
+    {% if is_granted('IS_AUTHENTICATED') %}
+        {{ encore_entry_link_tags('admin') }}
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% if is_granted('IS_AUTHENTICATED') %}
+        {{ encore_entry_script_tags('admin') }}
+    {% endif %}
 {% endblock %}
 
 {% block main %}
     <div class="content-wrapper">
         <div class="head">
-            <h1 class="headline">{{ 'resources.title'|trans }}</h1>
-            <h4 class="subtitle">{{ 'resources.subtitle'|trans }}</h4>
-
-            {% if not is_granted('IS_AUTHENTICATED') %}
-                <a href="{{ path('app_login') }}">{{ 'login.action'|trans }}</a>
-            {% else %}
-                <a href="{{ path('app_logout') }}">{{ 'login.logout'|trans }}</a>
-            {% endif %}
-
-            <button type="button">{{ 'resources.add'|trans }}</button>
+            <h1 class="headline">
+                <span>
+                    <div class="sep-line extended"></div>
+                    {{ 'resources.title'|trans }}
+                </span>
+                {% if not is_granted('IS_AUTHENTICATED') %}
+                    <a href="{{ path('app_login') }}">{{ 'login.action'|trans }}</a>
+                {% else %}
+                    <a href="{{ path('app_logout') }}">{{ 'login.logout'|trans }}</a>
+                {% endif %}
+            </h1>
+            <p class="subtitle">{{ 'resources.subtitle'|trans }}</p>
         </div>
 
-        {% include 'components/post-list.twig' with {'posts': posts} %}
+        <div class="posts">
+            <h3>
+                {{ 'posts'|trans }}
+                {% if is_granted('IS_AUTHENTICATED') %}
+                    <button type="button" class="cta" id="add-post-btn">{{ 'posts.add'|trans }}</button>
+                {% endif %}
+            </h3>
+
+            {% include 'components/post-list.twig' with {'posts': posts} %}
+        </div>
     </div>
+
+    {% if is_granted('IS_AUTHENTICATED') %}
+        <dialog data-title="{{ 'posts.add.title'|trans }}" data-confirm="{{ 'dialog.confirm'|trans }}"
+                data-cancel="{{ 'dialog.cancel'|trans }}" id="add-post-dialog">
+            {{ form_start(newPostForm) }}
+
+            <div>
+                {{ form_row(newPostForm.title) }}
+                {{ form_row(newPostForm.date) }}
+            </div>
+            {{ form_row(newPostForm.link) }}
+
+            <ul class="tags"
+                data-index="{{ newPostForm.categories|length > 0 ? newPostForm.categories|last.vars.value + 1 : 0 }}"
+                data-prototype="{{ form_widget(newPostForm.categories.vars.prototype)|e('html_attr') }}">
+                {% for tag in newPostForm.categories %}
+                    <li>{{ form_row(tag.name) }}</li>
+                {% endfor %}
+            </ul>
+
+            {{ form_row(newPostForm.description) }}
+
+            {{ form_end(newPostForm) }}
+        </dialog>
+    {% endif %}
 {% endblock %}

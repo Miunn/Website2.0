@@ -71,15 +71,15 @@ login.password: Password
 login.action: Login
 login.logout: Logout
 
-admin.category: Category
-admin.category.empty: No categories
-admin.category.add: Add a category
-admin.category.add.name: Name
-admin.posts: Posts
-admin.posts.empty: No posts
-admin.posts.add: Add a post
-admin.posts.add.title: New post
-admin.posts.add.placeholder:
+category: Category
+category.empty: No categories
+category.add: Add a category
+category.add.name: Name
+posts: Posts
+posts.empty: No posts
+posts.add: Add a post
+posts.add.title: New post
+posts.add.placeholder:
   title: Title
   link: Link
   description: Description

@@ -1,8 +1,35 @@
 .content-wrapper {
   max-width: 1300px;
 
-  .head {
-    max-width: 1000px;
-    margin: auto;
+  h1 {
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .subtitle {
+    margin-bottom: 60px;
+  }
+}
+
+.posts {
+  h3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
